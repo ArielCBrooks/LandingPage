@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  .header {
+    padding: 20px;
+    text-align: center;
+    background: white;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    font-family: 'Sofia', cursive;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #800020;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Sofia', cursive;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  .img {
+    background-color: #800020;
+    width: 100%;
+    padding: 20px;
+  }
+  .card {
+    font-family: 'Sofia', cursive;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .footer {
+    font-family: 'Sofia', cursive;
+    padding: 20px;
+    text-align: center;
+    background: #3b3131;
+    margin-top: 20px;
+    color: #ddd;
+  }
+  .contactinfo{
+    text-decoration-line: underline;
+  }
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
